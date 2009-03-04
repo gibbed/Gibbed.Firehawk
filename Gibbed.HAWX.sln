@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.HAWX.Helpers", "Gibbed.HAWX.Helpers\Gibbed.HAWX.Helpers.csproj", "{D1406D72-D969-4B40-A676-582FE5A9F2FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.HAWX.FileFormats", "Gibbed.HAWX.FileFormats\Gibbed.HAWX.FileFormats.csproj", "{87874779-7936-4677-B72B-C7D791FC23F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.HAWX.Tester", "Gibbed.HAWX.Tester\Gibbed.HAWX.Tester.csproj", "{A110E23C-5411-4ECE-AB0D-D32DAB20570E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.HAWX.ExtractCachedINIs", "Gibbed.HAWX.ExtractCachedINIs\Gibbed.HAWX.ExtractCachedINIs.csproj", "{C1148638-E46F-4F6C-92FE-0115D322DB59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{63183A00-A186-43DA-BFB1-723AF867BEEC}"
+	ProjectSection(SolutionItems) = preProject
+		license.txt = license.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1406D72-D969-4B40-A676-582FE5A9F2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1406D72-D969-4B40-A676-582FE5A9F2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1406D72-D969-4B40-A676-582FE5A9F2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1406D72-D969-4B40-A676-582FE5A9F2FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87874779-7936-4677-B72B-C7D791FC23F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87874779-7936-4677-B72B-C7D791FC23F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87874779-7936-4677-B72B-C7D791FC23F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87874779-7936-4677-B72B-C7D791FC23F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A110E23C-5411-4ECE-AB0D-D32DAB20570E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A110E23C-5411-4ECE-AB0D-D32DAB20570E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A110E23C-5411-4ECE-AB0D-D32DAB20570E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A110E23C-5411-4ECE-AB0D-D32DAB20570E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1148638-E46F-4F6C-92FE-0115D322DB59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1148638-E46F-4F6C-92FE-0115D322DB59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1148638-E46F-4F6C-92FE-0115D322DB59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1148638-E46F-4F6C-92FE-0115D322DB59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
