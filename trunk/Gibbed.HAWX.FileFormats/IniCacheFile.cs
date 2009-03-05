@@ -34,7 +34,7 @@ namespace Gibbed.HAWX.FileFormats
 			}
 		}
 
-		public class Decimal : Base
+		public class Integer : Base
 		{
 			public int Value;
 
@@ -54,7 +54,7 @@ namespace Gibbed.HAWX.FileFormats
 			}
 		}
 
-		public class Hexadecimal : Base
+		public class Color : Base
 		{
 			public uint Value;
 
@@ -66,6 +66,7 @@ namespace Gibbed.HAWX.FileFormats
 			public override void Read(Stream stream)
 			{
 				this.Value = stream.ReadU32BE();
+				//this.Value = ((this.Value >> 8) & 0xFFFFFF) | ((this.Value & 0xFF) << 24);
 			}
 
 			public override void Write(Stream stream)
@@ -102,10 +103,8 @@ namespace Gibbed.HAWX.FileFormats
 			public override string ToString()
 			{
 				return
-					"(" +
 					this.X.ToString(CultureInfo.InvariantCulture) + ", " +
-					this.Y.ToString(CultureInfo.InvariantCulture) +
-					")";
+					this.Y.ToString(CultureInfo.InvariantCulture);
 			}
 
 			public override void Read(Stream stream)
@@ -129,11 +128,9 @@ namespace Gibbed.HAWX.FileFormats
 			public override string ToString()
 			{
 				return
-					"(" +
 					this.X.ToString(CultureInfo.InvariantCulture) + ", " +
 					this.Y.ToString(CultureInfo.InvariantCulture) + ", " +
-					this.Z.ToString(CultureInfo.InvariantCulture) +
-					")";
+					this.Z.ToString(CultureInfo.InvariantCulture);
 			}
 
 			public override void Read(Stream stream)
@@ -159,12 +156,10 @@ namespace Gibbed.HAWX.FileFormats
 			public override string ToString()
 			{
 				return
-					"(" +
 					this.Top.ToString(CultureInfo.InvariantCulture) + ", " +
 					this.Left.ToString(CultureInfo.InvariantCulture) + ", " +
 					this.Bottom.ToString(CultureInfo.InvariantCulture) + ", " +
-					this.Right.ToString(CultureInfo.InvariantCulture) +
-					")";
+					this.Right.ToString(CultureInfo.InvariantCulture);
 			}
 
 			public override void Read(Stream stream)
@@ -250,14 +245,14 @@ namespace Gibbed.HAWX.FileFormats
 
 						switch (stream.ReadU8())
 						{
-							case 0: value = new IniTypes.Decimal(); break;
+							case 0: value = new IniTypes.Integer(); break;
 							case 2: value = new IniTypes.Float(); break;
 							case 4: value = new IniTypes.String(); break;
 							case 10: value = new IniTypes.Vector(); break;
 							case 14: value = new IniTypes.Boolean(); break;
 							case 16: value = new IniTypes.Rectangle(); break;
 							case 18: value = new IniTypes.Position(); break;
-							case 20: value = new IniTypes.Hexadecimal(); break;
+							case 20: value = new IniTypes.Color(); break;
 							default: throw new Exception();
 						}
 
@@ -270,6 +265,11 @@ namespace Gibbed.HAWX.FileFormats
 					}
 				}
 			}
+		}
+
+		public void Write(Stream stream)
+		{
+			throw new NotImplementedException();
 		}
 	}
 }

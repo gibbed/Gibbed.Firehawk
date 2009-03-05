@@ -107,10 +107,21 @@ namespace Gibbed.HAWX.ExtractCachedINIs
 			RealNames["configmultiplayer"] = "Config\\multiplayer.ini";
 			RealNames["configmovies"] = "Config\\movies.ini";
 			RealNames["configmissionsinfo_pc"] = "Config\\MissionsInfo_pc.ini";
+			RealNames["configmissionsinfo"] = "Config\\MissionsInfo.ini";
 			RealNames["configgamemodes"] = "Config\\gamemodes.ini";
 			RealNames["configdifflevels"] = "Config\\difflevels.ini";
+			RealNames["datamissionsmp_riosafepath"] = "Data\\missions\\MP_Rio\\safepath.ini";
+			RealNames["datamissionsmp_riomission"] = "Data\\missions\\MP_Rio\\mission.ini";
+			RealNames["datamissionsmp_riominimap"] = "Data\\missions\\MP_Rio\\minimap.ini";
+			RealNames["datamissionsmp_rioloadscreens"] = "Data\\missions\\MP_Rio\\loadscreens.ini";
+			RealNames["datamissionsmp_riofxcustomize"] = "Data\\missions\\MP_Rio\\FXCustomize.ini";
+			RealNames["datamissionsmp_riofx"] = "Data\\missions\\MP_Rio\\FX.ini";
+			RealNames["datamissionsff_terrainriomission"] = "Data\\missions\\FF_TerrainRio\\mission.ini";
+			RealNames["datamissionsff_terrainriominimap"] = "Data\\missions\\FF_TerrainRio\\minimap.ini";
+			RealNames["datamissionsff_terrainrioloadscreens"] = "Data\\missions\\FF_TerrainRio\\loadscreens.ini";
+			RealNames["datamissionsff_terrainriofxcustomize"] = "Data\\missions\\FF_TerrainRio\\FXCustomize.ini";
 
-			// Sanity check... just to be sure I made no mistakes
+			// Sanity check... just to be sure I made no mistakes when making the list.
 			/*
 			foreach (KeyValuePair<string, string> name in RealNames)
 			{
