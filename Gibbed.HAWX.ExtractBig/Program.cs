@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
-using Gibbed.HAWX.Helpers;
+using Gibbed.Firehawk.Helpers;
 
-namespace Gibbed.HAWX.ExtractBig
+namespace Gibbed.Firehawk.ExtractBig
 {
 	public class FileEntry
 	{

@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Gibbed.HAWX.Helpers
+namespace Gibbed.Firehawk.Helpers
 {
 	public static class ByteHelpers
 	{

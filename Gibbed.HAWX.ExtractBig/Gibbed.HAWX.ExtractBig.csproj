@@ -8,7 +8,7 @@
     <ProjectGuid>{CA403033-AABE-4956-A203-B4C1876F0563}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gibbed.HAWX.ExtractBig</RootNamespace>
+    <RootNamespace>Gibbed.Firehawk.ExtractBig</RootNamespace>
     <AssemblyName>Gibbed.HAWX.ExtractBig</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

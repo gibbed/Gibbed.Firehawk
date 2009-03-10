@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using Gibbed.HAWX.FileFormats;
+using Gibbed.Firehawk.FileFormats;
 
-namespace Gibbed.HAWX.ExtractCachedINIs
+namespace Gibbed.Firehawk.ExtractCachedINIs
 {
 	class Program
 	{
