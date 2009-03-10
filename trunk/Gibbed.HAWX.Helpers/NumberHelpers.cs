@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gibbed.HAWX.Helpers
+namespace Gibbed.Firehawk.Helpers
 {
 	public static class NumberHelpers
 	{

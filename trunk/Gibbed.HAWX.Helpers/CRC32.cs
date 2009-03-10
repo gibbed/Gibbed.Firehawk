@@ -3,7 +3,7 @@ using System.Collections;
 using System.IO;
 using System.Security.Cryptography;
 
-namespace Gibbed.HAWX.Helpers
+namespace Gibbed.Firehawk.Helpers
 {
 	public class CRC32 : HashAlgorithm
 	{

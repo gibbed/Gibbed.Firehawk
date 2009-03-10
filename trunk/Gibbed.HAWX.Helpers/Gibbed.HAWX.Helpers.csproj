@@ -8,7 +8,7 @@
     <ProjectGuid>{D1406D72-D969-4B40-A676-582FE5A9F2FF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gibbed.HAWX.Helpers</RootNamespace>
+    <RootNamespace>Gibbed.Firehawk.Helpers</RootNamespace>
     <AssemblyName>Gibbed.HAWX.Helpers</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using Gibbed.HAWX.Helpers;
+using Gibbed.Firehawk.Helpers;
 
-namespace Gibbed.HAWX.FileFormats
+namespace Gibbed.Firehawk.FileFormats
 {
 	namespace IniTypes
 	{

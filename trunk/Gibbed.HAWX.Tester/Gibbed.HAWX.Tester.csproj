@@ -8,7 +8,7 @@
     <ProjectGuid>{A110E23C-5411-4ECE-AB0D-D32DAB20570E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gibbed.HAWX.Tester</RootNamespace>
+    <RootNamespace>Gibbed.Firehawk.Tester</RootNamespace>
     <AssemblyName>Gibbed.HAWX.Tester</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

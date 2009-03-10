@@ -8,7 +8,7 @@
     <ProjectGuid>{87874779-7936-4677-B72B-C7D791FC23F8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gibbed.HAWX.FileFormats</RootNamespace>
+    <RootNamespace>Gibbed.Firehawk.FileFormats</RootNamespace>
     <AssemblyName>Gibbed.HAWX.FileFormats</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="IniCacheFile.cs" />
     <Compile Include="LanguagePackFile.cs" />
+    <Compile Include="MissionEntitiesFile.cs" />
+    <Compile Include="MissionModelsFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

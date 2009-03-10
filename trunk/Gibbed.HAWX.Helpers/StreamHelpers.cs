@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace Gibbed.HAWX.Helpers
+namespace Gibbed.Firehawk.Helpers
 {
 	public static class StreamHelpers
 	{
@@ -244,7 +244,7 @@ namespace Gibbed.HAWX.Helpers
 			return Encoding.ASCII.GetString(data);
 		}
 
-		public static string ReadASCIIZ(this Stream stream)
+		public static string ReadASCIIZ(this Stream stream, int max)
 		{
 			int i = 0;
 			byte[] data = new byte[64];
@@ -252,7 +252,7 @@ namespace Gibbed.HAWX.Helpers
 			while (true)
 			{
 				stream.Read(data, i, 1);
-				if (data[i] == 0)
+				if (data[i] == 0 || i > max)
 				{
 					break;
 				}
@@ -276,6 +276,11 @@ namespace Gibbed.HAWX.Helpers
 			}
 
 			return Encoding.ASCII.GetString(data, 0, i);
+		}
+
+		public static string ReadASCIIZ(this Stream stream)
+		{
+			return stream.ReadASCIIZ(0);
 		}
 
 		public static void WriteASCII(this Stream stream, string value)

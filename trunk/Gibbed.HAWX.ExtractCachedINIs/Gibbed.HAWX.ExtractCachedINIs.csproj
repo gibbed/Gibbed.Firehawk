@@ -8,7 +8,7 @@
     <ProjectGuid>{C1148638-E46F-4F6C-92FE-0115D322DB59}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gibbed.HAWX.ExtractCachedINIs</RootNamespace>
+    <RootNamespace>Gibbed.Firehawk.ExtractCachedINIs</RootNamespace>
     <AssemblyName>Gibbed.HAWX.ExtractCachedINIs</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

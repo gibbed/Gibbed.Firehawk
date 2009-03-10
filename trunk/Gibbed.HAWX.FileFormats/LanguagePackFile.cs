@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using Gibbed.HAWX.Helpers;
+using Gibbed.Firehawk.Helpers;
 
-namespace Gibbed.HAWX.FileFormats
+namespace Gibbed.Firehawk.FileFormats
 {
 	public class IndexEntry
 	{
