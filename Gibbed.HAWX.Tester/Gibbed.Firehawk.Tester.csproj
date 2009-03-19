@@ -49,17 +49,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Gibbed.HAWX.FileFormats\Gibbed.HAWX.FileFormats.csproj">
+    <ProjectReference Include="..\Gibbed.HAWX.FileFormats\Gibbed.Firehawk.FileFormats.csproj">
       <Project>{87874779-7936-4677-B72B-C7D791FC23F8}</Project>
-      <Name>Gibbed.HAWX.FileFormats</Name>
+      <Name>Gibbed.Firehawk.FileFormats</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Gibbed.HAWX.GameInformation\Gibbed.HAWX.GameInformation.csproj">
+    <ProjectReference Include="..\Gibbed.HAWX.GameInformation\Gibbed.Firehawk.GameInformation.csproj">
       <Project>{4923F5F1-EF2B-473E-BA10-FEF1C091D123}</Project>
-      <Name>Gibbed.HAWX.GameInformation</Name>
+      <Name>Gibbed.Firehawk.GameInformation</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Gibbed.HAWX.Helpers\Gibbed.HAWX.Helpers.csproj">
+    <ProjectReference Include="..\Gibbed.HAWX.Helpers\Gibbed.Firehawk.Helpers.csproj">
       <Project>{D1406D72-D969-4B40-A676-582FE5A9F2FF}</Project>
-      <Name>Gibbed.HAWX.Helpers</Name>
+      <Name>Gibbed.Firehawk.Helpers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

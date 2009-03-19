@@ -49,9 +49,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Gibbed.HAWX.Helpers\Gibbed.HAWX.Helpers.csproj">
+    <ProjectReference Include="..\Gibbed.HAWX.Helpers\Gibbed.Firehawk.Helpers.csproj">
       <Project>{D1406D72-D969-4B40-A676-582FE5A9F2FF}</Project>
-      <Name>Gibbed.HAWX.Helpers</Name>
+      <Name>Gibbed.Firehawk.Helpers</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
