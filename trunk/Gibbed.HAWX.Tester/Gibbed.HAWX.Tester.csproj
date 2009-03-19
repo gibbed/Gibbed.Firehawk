@@ -53,6 +53,14 @@
       <Project>{87874779-7936-4677-B72B-C7D791FC23F8}</Project>
       <Name>Gibbed.HAWX.FileFormats</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Gibbed.HAWX.GameInformation\Gibbed.HAWX.GameInformation.csproj">
+      <Project>{4923F5F1-EF2B-473E-BA10-FEF1C091D123}</Project>
+      <Name>Gibbed.HAWX.GameInformation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gibbed.HAWX.Helpers\Gibbed.HAWX.Helpers.csproj">
+      <Project>{D1406D72-D969-4B40-A676-582FE5A9F2FF}</Project>
+      <Name>Gibbed.HAWX.Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="license.txt" />

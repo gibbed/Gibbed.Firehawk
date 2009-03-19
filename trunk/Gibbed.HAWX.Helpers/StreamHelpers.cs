@@ -252,7 +252,7 @@ namespace Gibbed.Firehawk.Helpers
 			while (true)
 			{
 				stream.Read(data, i, 1);
-				if (data[i] == 0 || i > max)
+				if (data[i] == 0 || (max > 0 && i > max))
 				{
 					break;
 				}
@@ -289,11 +289,77 @@ namespace Gibbed.Firehawk.Helpers
 			stream.Write(data, 0, data.Length);
 		}
 
-		public static void WriteASCIIZ(this Stream stream, string value)
+		public static void WriteASCIIZ(this Stream stream, string value, int max)
 		{
+			if (max > 0 && value.Length > max)
+			{
+				value = value.Substring(0, max);
+			}
+
 			byte[] data = Encoding.ASCII.GetBytes(value);
 			stream.Write(data, 0, data.Length);
 			stream.WriteByte(0);
+		}
+
+		public static void WriteASCIIZ(this Stream stream, string value)
+		{
+			stream.WriteASCIIZ(value, 0);
+		}
+
+		public static string ReadUTF16LEZ(this Stream stream, int max)
+		{
+			int i = 0;
+			byte[] data = new byte[64];
+
+			while (true)
+			{
+				stream.Read(data, i, 2);
+				if (BitConverter.ToUInt16(data, i) == 0 || (max > 0 && i > (max * 2)))
+				{
+					break;
+				}
+
+				if (i >= data.Length)
+				{
+					if (data.Length >= 4096)
+					{
+						throw new InvalidOperationException();
+					}
+
+					Array.Resize(ref data, data.Length + 64);
+				}
+
+				i += 2;
+			}
+
+			if (i == 0)
+			{
+				return "";
+			}
+
+			return Encoding.Unicode.GetString(data, 0, i);
+		}
+
+		public static string ReadUTF16LEZ(this Stream stream)
+		{
+			return stream.ReadUTF16LEZ(0);
+		}
+
+		public static void WriteUTF16LEZ(this Stream stream, string value, int max)
+		{
+			if (max > 0 && value.Length > max)
+			{
+				value = value.Substring(0, max);
+			}
+
+			byte[] data = Encoding.Unicode.GetBytes(value);
+			stream.Write(data, 0, data.Length);
+			stream.WriteU16(0);
+		}
+
+		public static void WriteUTF16LEZ(this Stream stream, string value)
+		{
+			stream.WriteUTF16LEZ(value, 0);
 		}
 	}
 }
