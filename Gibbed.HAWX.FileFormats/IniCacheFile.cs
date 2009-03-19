@@ -202,7 +202,7 @@ namespace Gibbed.Firehawk.FileFormats
 		public string Name;
 		public UInt32 Offset;
 		public UInt32 Size;
-		public Dictionary<string, Dictionary<string, object>> Sections = new Dictionary<string, Dictionary<string, object>>();
+		public SortedDictionary<string, SortedDictionary<string, object>> Sections = new SortedDictionary<string, SortedDictionary<string, object>>();
 	}
 
 	public class IniCacheFile
@@ -228,13 +228,13 @@ namespace Gibbed.Firehawk.FileFormats
 			{
 				stream.Seek(entry.Offset, SeekOrigin.Begin);
 
-				Dictionary<string, object> section = null;
+				SortedDictionary<string, object> section = null;
 				while (stream.Position < entry.Offset + entry.Size)
 				{
 					byte keyType = stream.ReadU8();
 					if (keyType == 0) // section
 					{
-						section = new Dictionary<string, object>();
+						section = new SortedDictionary<string, object>();
 						string name = stream.ReadASCIIZ();
 						entry.Sections[name] = section;
 					}
