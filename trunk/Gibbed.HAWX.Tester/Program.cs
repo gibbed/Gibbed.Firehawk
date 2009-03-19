@@ -8,10 +8,16 @@ namespace Gibbed.Firehawk.Tester
 	{
 		static void Main(string[] args)
 		{
+			/*
 			MissionModelsFile missionModels = new MissionModelsFile();
-			
 			Stream input = File.OpenRead("entities.mdl");
 			missionModels.Read(input);
+			input.Close();
+			*/
+
+			MissionEntitiesFile missionEntities = new MissionEntitiesFile();
+			Stream input = File.OpenRead("mission.gbe");
+			missionEntities.Read(input);
 			input.Close();
 		}
 	}
