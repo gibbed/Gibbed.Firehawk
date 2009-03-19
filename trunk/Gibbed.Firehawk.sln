@@ -1,22 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.HAWX.Helpers", "Gibbed.HAWX.Helpers\Gibbed.HAWX.Helpers.csproj", "{D1406D72-D969-4B40-A676-582FE5A9F2FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.Firehawk.Helpers", "Gibbed.HAWX.Helpers\Gibbed.Firehawk.Helpers.csproj", "{D1406D72-D969-4B40-A676-582FE5A9F2FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.HAWX.FileFormats", "Gibbed.HAWX.FileFormats\Gibbed.HAWX.FileFormats.csproj", "{87874779-7936-4677-B72B-C7D791FC23F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.Firehawk.FileFormats", "Gibbed.HAWX.FileFormats\Gibbed.Firehawk.FileFormats.csproj", "{87874779-7936-4677-B72B-C7D791FC23F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.HAWX.Tester", "Gibbed.HAWX.Tester\Gibbed.HAWX.Tester.csproj", "{A110E23C-5411-4ECE-AB0D-D32DAB20570E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.Firehawk.Tester", "Gibbed.HAWX.Tester\Gibbed.Firehawk.Tester.csproj", "{A110E23C-5411-4ECE-AB0D-D32DAB20570E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.HAWX.ExtractCachedINIs", "Gibbed.HAWX.ExtractCachedINIs\Gibbed.HAWX.ExtractCachedINIs.csproj", "{C1148638-E46F-4F6C-92FE-0115D322DB59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.Firehawk.ExtractCachedINIs", "Gibbed.HAWX.ExtractCachedINIs\Gibbed.Firehawk.ExtractCachedINIs.csproj", "{C1148638-E46F-4F6C-92FE-0115D322DB59}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{63183A00-A186-43DA-BFB1-723AF867BEEC}"
 	ProjectSection(SolutionItems) = preProject
 		license.txt = license.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.HAWX.ExtractBig", "Gibbed.HAWX.ExtractBig\Gibbed.HAWX.ExtractBig.csproj", "{CA403033-AABE-4956-A203-B4C1876F0563}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.Firehawk.ExtractBig", "Gibbed.HAWX.ExtractBig\Gibbed.Firehawk.ExtractBig.csproj", "{CA403033-AABE-4956-A203-B4C1876F0563}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.HAWX.GameInformation", "Gibbed.HAWX.GameInformation\Gibbed.HAWX.GameInformation.csproj", "{4923F5F1-EF2B-473E-BA10-FEF1C091D123}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibbed.Firehawk.GameInformation", "Gibbed.HAWX.GameInformation\Gibbed.Firehawk.GameInformation.csproj", "{4923F5F1-EF2B-473E-BA10-FEF1C091D123}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution

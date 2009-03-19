@@ -49,9 +49,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Gibbed.HAWX.FileFormats\Gibbed.HAWX.FileFormats.csproj">
+    <ProjectReference Include="..\Gibbed.HAWX.FileFormats\Gibbed.Firehawk.FileFormats.csproj">
       <Project>{87874779-7936-4677-B72B-C7D791FC23F8}</Project>
-      <Name>Gibbed.HAWX.FileFormats</Name>
+      <Name>Gibbed.Firehawk.FileFormats</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
