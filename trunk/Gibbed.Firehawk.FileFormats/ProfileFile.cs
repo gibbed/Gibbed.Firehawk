@@ -62,16 +62,16 @@ namespace Gibbed.Firehawk.FileFormats
 
 	public class MissionProfileData
 	{
-		public int Unknown01;
-		public int Unknown02;
-		public int Unknown03;
+		public int ActiveInCampaign;
+		public int Invisible;
+		public int UnlockMode;
 		public int[] Unknown04;
 
 		public void Read(Stream stream)
 		{
-			this.Unknown01 = stream.ReadS32();
-			this.Unknown02 = stream.ReadS32();
-			this.Unknown03 = stream.ReadS32();
+			this.ActiveInCampaign = stream.ReadS32();
+			this.Invisible = stream.ReadS32();
+			this.UnlockMode = stream.ReadS32();
 
 			int count = stream.ReadS32();
 			this.Unknown04 = new int[count];
@@ -84,9 +84,9 @@ namespace Gibbed.Firehawk.FileFormats
 
 		public void Write(Stream stream)
 		{
-			stream.WriteS32(this.Unknown01);
-			stream.WriteS32(this.Unknown02);
-			stream.WriteS32(this.Unknown03);
+			stream.WriteS32(this.ActiveInCampaign);
+			stream.WriteS32(this.Invisible);
+			stream.WriteS32(this.UnlockMode);
 
 			stream.WriteS32(this.Unknown04.Length);
 			for (int i = 0; i < this.Unknown04.Length; i++)
@@ -117,7 +117,7 @@ namespace Gibbed.Firehawk.FileFormats
 	public class PlaneProfileData
 	{
 		public int UnlockMode;
-		public int Unknown02;
+		public int SpecialUnlockMode;
 		public int UnlockSkin;
 		public int Unknown04;
 
@@ -138,13 +138,7 @@ namespace Gibbed.Firehawk.FileFormats
 			Gibbed.Firehawk.PlaneInformation details = Gibbed.Firehawk.GameInformation.Planes[planeIndex];
 
 			this.UnlockMode = stream.ReadS32();
-			this.Unknown02 = stream.ReadS32();
-
-			if (this.Unknown02 != -1)
-			{
-
-			}
-
+			this.SpecialUnlockMode = stream.ReadS32();
 			this.UnlockSkin = stream.ReadS32(); // always little-endian
 			this.Unknown04 = stream.ReadS32();
 
@@ -175,7 +169,7 @@ namespace Gibbed.Firehawk.FileFormats
 		public void Write(Stream stream, int planeIndex)
 		{
 			stream.WriteS32(this.UnlockMode);
-			stream.WriteS32(this.Unknown02);
+			stream.WriteS32(this.SpecialUnlockMode);
 			stream.WriteS32(this.UnlockSkin); // always little-endian
 			stream.WriteS32(this.Unknown04);
 
@@ -404,7 +398,6 @@ namespace Gibbed.Firehawk.FileFormats
 
 			for (int i = 0; i < this.Challenges.Length; i++)
 			{
-				this.Challenges[i] = new ChallengeProfileData();
 				this.Challenges[i].Write(stream);
 			}
 
