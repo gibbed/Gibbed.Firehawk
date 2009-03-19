@@ -59,11 +59,11 @@ namespace Gibbed.Firehawk.Tester
 					details.Name == "SU39")
 				{
 					profile.Planes[i].SpecialUnlockMode = 1;
+				}
 
-					if (Gibbed.Firehawk.GameInformation.Planes[i].HasSkin)
-					{
-						profile.Planes[i].UnlockSkin = 1;
-					}
+				if (Gibbed.Firehawk.GameInformation.Planes[i].HasSkin)
+				{
+					profile.Planes[i].UnlockSkin = 1;
 				}
 
 				for (int j = 0; j < profile.Planes[i].SPPacks.Length; j++)
