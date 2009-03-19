@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Gibbed.Firehawk.GameInformation</RootNamespace>
-    <AssemblyName>Gibbed.HAWX.GameInformation</AssemblyName>
+    <AssemblyName>Gibbed.Firehawk.GameInformation</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

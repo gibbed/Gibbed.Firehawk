@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Gibbed.Firehawk.Helpers</RootNamespace>
-    <AssemblyName>Gibbed.HAWX.Helpers</AssemblyName>
+    <AssemblyName>Gibbed.Firehawk.Helpers</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

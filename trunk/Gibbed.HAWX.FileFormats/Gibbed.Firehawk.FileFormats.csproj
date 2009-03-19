@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Gibbed.Firehawk.FileFormats</RootNamespace>
-    <AssemblyName>Gibbed.HAWX.FileFormats</AssemblyName>
+    <AssemblyName>Gibbed.Firehawk.FileFormats</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -53,11 +53,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Gibbed.HAWX.GameInformation\Gibbed.Firehawk.GameInformation.csproj">
+    <ProjectReference Include="..\Gibbed.Firehawk.GameInformation\Gibbed.Firehawk.GameInformation.csproj">
       <Project>{4923F5F1-EF2B-473E-BA10-FEF1C091D123}</Project>
       <Name>Gibbed.Firehawk.GameInformation</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Gibbed.HAWX.Helpers\Gibbed.Firehawk.Helpers.csproj">
+    <ProjectReference Include="..\Gibbed.Firehawk.Helpers\Gibbed.Firehawk.Helpers.csproj">
       <Project>{D1406D72-D969-4B40-A676-582FE5A9F2FF}</Project>
       <Name>Gibbed.Firehawk.Helpers</Name>
     </ProjectReference>
